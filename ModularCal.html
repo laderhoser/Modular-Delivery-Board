@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dans Delivery Board</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+ <script src="sweetalert/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="sweetalert/sweetalert.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="logic.js"></script>
+
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.css' />
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.6.0/fullcalendar.min.js'></script>
+<script type="text/javascript" href="logic.js"></script>
+
+</head>
+<body>
+
+<div class="jumbotron">
+	<div class="container" align="center">
+		<h1>Modular Delivery Calendar</h1>
+	
+	</div>
+</div>
+<div id='calendar'></div>
+<br>
+<br>
+
+<div class="container-fluid">
+	<div class="panel panel-default col-lg-5">
+		<div class="panel-body">
+			<form action="" method="POST" role="form">
+				<legend>Add Modular Job Form</legend>
+			
+				<div class="form-group">
+					<label for="">Customer Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Input field">
+				</div>
+
+				<div class="form-group">
+					<p><strong>Date: <input type="date" id="date"></p>
+				</div>
+
+				<div class="form-group">
+					<label for="">Amount Of Cubes:</label>
+					
+					<select id="cubeNum"></select>
+
+				</div>
+
+				<div class="form-group">
+					<label for="">Address</label>
+					<input type="text" class="form-control" id="addy" placeholder="Input field">
+				</div>
+
+				<div class="form-group">
+					<label for="">Brief Description</label>
+					 <textarea class="form-control"  id="brief" rows="3" cols="35" wrap="soft"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="">Salesperson Name:</label>
+					<input type="text" class="form-control" id="salesName" placeholder="Input field">
+				</div>
+
+				<div class="form-group">
+					<label for="">Before or after hours?</label>
+					<input type="text" class="form-control" id="hours" placeholder="Input field">
+				</div>
+
+				<div class="form-group">
+					<label for="">Furniture involved?</label>
+					<input type="text" class="form-control" id="furn" placeholder="Input field">
+				</div>
+				
+			
+				
+			
+				<button id="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBbuNiVqPDspAofOWpMc8xH8YA15Bk9b04",
+    authDomain: "modular-delivery.firebaseapp.com",
+    databaseURL: "https://modular-delivery.firebaseio.com",
+    projectId: "modular-delivery",
+    storageBucket: "modular-delivery.appspot.com",
+    messagingSenderId: "956847679272"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</body>
+</html>
